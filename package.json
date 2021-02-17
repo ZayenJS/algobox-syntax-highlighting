@@ -2,7 +2,7 @@
   "name": "algobox-syntax-highlighting",
   "displayName": "Algobox syntax highlighting",
   "description": "Syntax support for algoBox algorithm language",
-  "publisher": "David Nogueira",
+  "publisher": "ZayenJS",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.53.0"
