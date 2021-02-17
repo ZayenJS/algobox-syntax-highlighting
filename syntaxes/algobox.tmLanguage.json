@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "algoBox",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#variables"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#comments"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash",
+          "begin": "//",
+          "end": "\n"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.numeric",
+          "match": "(?<!\\w)\\d+"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.algobox",
+          "match": "\\b(POUR|ALLANT_DE|A|TANT_QUE|FAIRE|SI|ALORS|SINON)\\b"
+        },
+        {
+          "name": "storage.type.cs",
+          "match": "(FIN_FONCTION|DEBUT_FONCTION|DEBUT_POUR|FIN_POUR|DEBUT_SINON|FIN_SINON|DEBUT_TANT_QUE|FIN_TANT_QUE|DEBUT_SI|FIN_SI|(?<=AFFICHER|AFFICHERCALCUL)[^\\s])"
+        },
+        {
+          "name": "keyword.other.algobox",
+          "match": "\\b(LIRE|AFFICHER|AFFICHERCALCUL)\\b"
+        },
+        {
+          "name": "markup.heading",
+          "match": "\\b(FONCTIONS_UTILISEES|VARIABLES|DEBUT_ALGORITHME|FIN_ALGORITHME)\\b"
+        },
+        {
+          "name": "markup.inline.raw",
+          "match": "\\b(VARIABLES_FONCTION)\\b"
+        },
+        {
+          "name": "storage.type.function.ts",
+          "match": "\\b(FONCTION)\\b"
+        },
+        {
+          "name": "support.function",
+          "match": "(\\S+(?=\\())"
+        },
+        {
+          "name": "entity.name.type",
+          "match": "\\b(LISTE|NOMBRE|CHAINE)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.algobox",
+      "begin": "\"",
+      "end": "\""
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "variable.language.algobox",
+          "match": "\\b(EST_DU_TYPE|PREND_LA_VALEUR)\\b"
+        },
+        {
+          "name": "entity.other.attribute-name",
+          "match": "[a-zA-Z]|(?<=\\w)\\d+"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.algobox"
+}

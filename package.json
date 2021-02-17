@@ -1,0 +1,39 @@
+{
+  "name": "algobox-syntax-highlighting",
+  "displayName": "Algobox syntax highlighting",
+  "description": "Syntax support for algoBox algorithm language",
+  "publisher": "David Nogueira",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.53.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "algobox",
+        "aliases": [
+          "algoBox",
+          "algobox",
+          "algo"
+        ],
+        "extensions": [
+          ".algo",
+          ".algobox",
+          ".box",
+          ".ab"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "algobox",
+        "scopeName": "source.algobox",
+        "path": "./syntaxes/algobox.tmLanguage.json"
+      }
+    ]
+  }
+}
