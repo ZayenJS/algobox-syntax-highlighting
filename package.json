@@ -35,5 +35,6 @@
         "path": "./syntaxes/algobox.tmLanguage.json"
       }
     ]
-  }
+  },
+  "icon": "https://github.com/ZayenJS/algobox-syntax-highlighting/blob/main/img/algobox256x256.png"
 }
