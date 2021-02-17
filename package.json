@@ -3,6 +3,14 @@
   "displayName": "Algobox syntax highlighting",
   "description": "Syntax support for algoBox algorithm language",
   "publisher": "ZayenJS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZayenJS/algobox-syntax-highlighting.git"
+  },
+  "homepage": "https://github.com/ZayenJS/algobox-syntax-highlighting#readme",
+  "bugs": {
+    "url": "https://github.com/ZayenJS/algobox-syntax-highlighting/issues"
+  },
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.53.0"
